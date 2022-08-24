@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notes</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="/script.js" defer></script>
+    </head>
+    <body>
+        <div class="popup-overlay">
+            <div class="popup-menu">
+                <h1>Add Note</h1>
+                <img
+                    src="https://cdn.iconscout.com/icon/free/png-256/cross-3352288-2791224.png"
+                    alt="close"
+                    class="close-menu"
+                />
+                <form id="note-form">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" />
+                    <label for="title">Description</label>
+                    <textarea id="desc"></textarea>
+                    <input type="submit" value="Add" />
+                </form>
+            </div>
+        </div>
+        <main>
+            <div class="container">
+                <button class="add-note-btn">Add Note</button>
+                <ul class="notes"></ul>
+            </div>
+        </main>
+    </body>
+</html>
